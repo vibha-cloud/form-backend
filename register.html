@@ -11,45 +11,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="main-container">
-        <h2>Register</h2>
-        <form action="#">
-          <div class="input-field">
-            <input type="text" placeholder="Full name" id="name" required />
-            <span class="icon2"><i class="fa-solid fa-user"></i></span>
-          </div>
-          <div class="input-field">
-            <input type="email" placeholder="Email" id="mail" required />
-            <span class="icon2"><i class="fa-solid fa-envelope"></i></span>
-          </div>
-          <div class="input-field">
-            <input
-              type="password"
-              placeholder="Create password"
-              id="password"
-              required
-            />
-            <span class="icon2"><i class="fa-solid fa-lock"></i></span>
-          </div>
+    <div class="main-container">
+      <h2>Register</h2>
+      <form action="#">
+        <div class="input-field">
+          <input type="text" placeholder="Full name" id="name" required />
+          <span class="icon2"><i class="fa-solid fa-user"></i></span>
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Email" id="mail" required />
+          <span class="icon2"><i class="fa-solid fa-envelope"></i></span>
+        </div>
+        <div class="input-field">
+          <input
+            type="password"
+            placeholder="Create password"
+            id="password"
+            maxlength="12"
+            required
+          />
+          <span class="icon2"><i class="fa-solid fa-lock"></i></span>
+        </div>
 
-          <div class="check-box">
-            <label for="terms&cond">
-              <input type="checkbox" id="terms&cond" required /> I agree to the
-              terms and conditions
-            </label>
-          </div>
+        <div class="check-box">
+          <label for="terms&cond">
+            <input type="checkbox" id="terms&cond" required /> I agree to the
+            terms and conditions
+          </label>
+        </div>
 
-          <button type="submit">Register</button>
-          <div class="login-register-option">
-            <p>Already have an account?</p>
-            <a href="./index.html">Sign In</a>
-          </div>
-        </form>
-      </div>
-      <div class="image">
-        <img src="gif.png" alt="img" />
-      </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="login-register-option">
+          <p>Already have an account?</p>
+          <a href="./index.html">Sign In</a>
+        </div>
+      </form>
     </div>
   </body>
 </html>

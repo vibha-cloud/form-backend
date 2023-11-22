@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap");
+
+:root {
+  --green: #308d46;
+  --dark-green: #114c20;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,21 +17,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(58, 58, 116);
-  background: rgb(94, 94, 185);
-}
-
-.main {
-  display: flex;
-  border-radius: 10px;
-  box-shadow: 0 5px 30px rgba(40, 37, 37, 0.5);
-}
-
-.image img {
-  height: 60vh;
-  width: 50vh;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background-image: url("./images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Figtree", sans-serif;
 }
 
 .main-container {
@@ -36,15 +32,16 @@ body {
   height: 60vh;
   width: 50vh;
   padding: 5vh;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: whitesmoke;
+  border-radius: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 h2 {
   text-align: center;
   font-size: 5vh;
-  color: rgb(58, 58, 116);
+  color: var(--green);
 }
 
 .input-field {
@@ -54,40 +51,13 @@ h2 {
 
 .input-field input {
   border: 0;
-  border-bottom: 2px solid rgb(58, 58, 116);
+  border-bottom: 2px solid var(--green);
   width: 100%;
   margin: 0.6vh 0;
   padding: 0.7vh;
   font-size: 2vh;
   outline: none;
-}
-
-.icon {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-}
-
-.icon2 {
-  position: absolute;
-  top: 30%;
-  right: 5%;
-}
-
-.icon3 {
-  position: absolute;
-  top: 3%;
-  left: 3%;
-  font-size: 3vh;
-  font-weight: bold;
-  padding: 0 0.5vh;
-  border-radius: 50%;
-  color: white;
-  background-color: rgb(58, 58, 116);
-}
-
-.icon3 a:hover {
-  cursor: pointer;
+  background: transparent;
 }
 
 .input-field label {
@@ -113,32 +83,55 @@ h2 {
 
 a {
   font-weight: bold;
-  color: darkblue;
+  color: var(--green);
 }
 
 a:hover {
-  color: blue;
+  color: var(--dark-green);
 }
 
-button {
+.btn {
   padding: 1vh;
   width: 100%;
   margin: 1vh 0;
   font-size: 2vh;
   font-weight: bold;
   color: white;
-  background-color: rgb(58, 58, 116);
+  background-color: var(--green);
   border-radius: 5px;
-  border: 1px solid rgb(58, 58, 116);
+  border: 1px solid var(--green);
   cursor: pointer;
 }
 
-@media screen and (max-width: 1000px) {
-  .image img {
-    display: none;
-  }
+.btn:hover {
+  background-color: var(--dark-green);
+}
 
-  .main-container {
-    border-radius: 10px;
-  }
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.icon2 {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+
+.icon3 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 3vh;
+  font-weight: bold;
+  padding: 0 0.3rem;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--green);
+}
+
+.icon3:hover {
+  cursor: pointer;
+  background-color: var(--dark-green);
 }
