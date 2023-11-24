@@ -31,8 +31,8 @@ body {
   align-items: center;
   height: 60vh;
   width: 50vh;
-  padding: 3rem;
-  margin: 2rem;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 10px;
   background-color: transparent;
   backdrop-filter: blur(50px);
@@ -43,6 +43,10 @@ h2 {
   text-align: center;
   font-size: 5vh;
   color: var(--green);
+}
+
+form {
+  width: 80%;
 }
 
 .input-field {
@@ -69,6 +73,16 @@ h2 {
   font-size: 2vh;
   display: flex;
   justify-content: space-between;
+  margin: 1vh 0;
+}
+
+.remember-box,
+.terms-box {
+  display: flex;
+  align-items: center;
+}
+
+.terms-box {
   margin: 1vh 0;
 }
 
@@ -108,13 +122,7 @@ a:hover {
   background-color: var(--dark-green);
 }
 
-.icon {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-}
-
-.icon2 {
+.icon1, .icon2  {
   position: absolute;
   top: 25%;
   right: 5%;
