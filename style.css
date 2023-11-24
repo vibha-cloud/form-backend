@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap");
 
 :root {
+<<<<<<< HEAD
   --green: #309848;
+=======
+  --green: #308d46;
+>>>>>>> 5162cd6d70a718e58623d79b9e61c44028f0aea9
   --dark-green: #1d5f2e;
 }
 
