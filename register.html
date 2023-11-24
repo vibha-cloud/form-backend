@@ -15,11 +15,11 @@
       <h2>Register</h2>
       <form action="#">
         <div class="input-field">
-          <input type="text" placeholder="Full name" id="name" required />
+          <input type="text" placeholder="Full name" id="name" name="name" value="" required />
           <span class="icon2"><i class="fa-solid fa-user"></i></span>
         </div>
         <div class="input-field">
-          <input type="email" placeholder="Email" id="mail" required />
+          <input type="email" placeholder="Email" id="email" name="email" value="" required />
           <span class="icon2"><i class="fa-solid fa-envelope"></i></span>
         </div>
         <div class="input-field">
@@ -28,19 +28,21 @@
             placeholder="Create password"
             id="password"
             maxlength="12"
+            name="password"
+            value=""
             required
           />
           <span class="icon2"><i class="fa-solid fa-lock"></i></span>
         </div>
 
         <div class="check-box">
-          <label for="terms&cond">
-            <input type="checkbox" id="terms&cond" required /> I agree to the
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required /> I agree to the
             terms and conditions
           </label>
         </div>
 
-        <button type="submit" class="btn">Register</button>
+        <input type="submit" class="btn" name="submit" value="Register"></input>
         <div class="login-register-option">
           <p>Already have an account?</p>
           <a href="./index.html">Sign In</a>

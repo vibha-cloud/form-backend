@@ -31,10 +31,11 @@ body {
   align-items: center;
   height: 60vh;
   width: 50vh;
-  padding: 5vh;
+  padding: 3rem;
+  margin: 2rem;
   border-radius: 10px;
   background-color: transparent;
-  backdrop-filter: blur(23px);
+  backdrop-filter: blur(50px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
