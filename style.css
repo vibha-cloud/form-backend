@@ -2,7 +2,7 @@
 
 :root {
   --green: #308d46;
-  --dark-green: #114c20;
+  --dark-green: #1d5f2e;
 }
 
 * {
@@ -122,7 +122,8 @@ a:hover {
   background-color: var(--dark-green);
 }
 
-.icon1, .icon2  {
+.icon1,
+.icon2 {
   position: absolute;
   top: 25%;
   right: 5%;
@@ -143,4 +144,10 @@ a:hover {
 .icon3:hover {
   cursor: pointer;
   background-color: var(--dark-green);
+}
+
+.icon4 {
+  position: absolute;
+  top: 50%;
+  right: 5%;
 }
