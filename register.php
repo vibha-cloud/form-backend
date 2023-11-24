@@ -1,3 +1,42 @@
+<!-- To register: -->
+<?php
+    include("config.php");
+
+    if (isset($_POST["submit"])) {
+
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        $confirmpassword = $_POST["confirmpassword"];
+
+        $sql = "SELECT * FROM user WHERE email = '$email'";
+        $duplicate = mysqli_query($conn, $sql);
+        if (mysqli_num_rows($duplicate) > 0) {
+          echo "<script> alert('This email has already been registered.'); </script>";
+        }
+        else {
+            if ($password != $confirmpassword) {
+                echo "<script> alert('Password does not match.'); </script>";
+            }
+            
+            else {
+                $query = "INSERT INTO user (name, email, password) VALUES ('$name', '$email', '$password')";
+                $result = mysqli_query($conn, $query);
+                
+                if ($result) {
+                    echo "<script> alert('Registration Successful.'); </script>";
+                    header("Location: home.html");
+                }
+                else {
+                    echo "Error";
+                }
+            }
+        }
+    }
+    // mysqli_close($conn);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +52,7 @@
   <body>
     <div class="main-container">
       <h2>Register</h2>
-      <form action="">
+      <form action="#" method="post">
         <div class="input-field">
           <input
             type="text"
@@ -65,7 +104,7 @@
         <button type="submit" class="btn" name="submit">Register</button>
         <div class="login-register-option">
           <p>Already have an account?</p>
-          <a href="./index.html">Sign In</a>
+          <a href="./index.php">Sign In</a>
         </div>
       </form>
     </div>
